@@ -15,6 +15,10 @@ feature 'User index page', :devise do
   #   Given I am signed in
   #   When I visit the user index page
   #   Then I see my own email address
+  scenario 'page should have correct address' do
+    expect(current_path).to eq '/all_users'
+  end
+
   scenario 'user sees own email address' do
     user = FactoryGirl.create(:user)
     login_as(user, scope: :user)
