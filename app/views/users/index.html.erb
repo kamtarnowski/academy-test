@@ -2,6 +2,7 @@
   <div class="row">
     <h3>Users</h3>
     <div class="column">
+
       <table class="table">
         <tbody>
           <% @users.each do |user| %>
@@ -9,8 +10,11 @@
               <%= render user %>
             </tr>
           <% end %>
+
         </tbody>
       </table>
+      <%= will_paginate @users, renderer: BootstrapPagination::Rails, :previous_label => t("Wstecz"), :next_label => t("Dalej") %>
+
     </div>
   </div>
 </div>

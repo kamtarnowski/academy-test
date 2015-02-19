@@ -14,6 +14,8 @@ group :development, :test do
 end
 gem 'bootstrap-sass'
 gem 'devise'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
 group :development do
   gem 'better_errors'
   gem 'quiet_assets'
