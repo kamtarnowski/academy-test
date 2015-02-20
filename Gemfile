@@ -16,6 +16,7 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
+gem 'jquery-turbolinks' # added to prevent javascript errors after refreshing sites
 group :development do
   gem 'better_errors'
   gem 'quiet_assets'
